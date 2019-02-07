@@ -6,14 +6,7 @@ version: 2
 jobs:
   build:
     docker:
-      # specify the version you desire here
-      # use `-browsers` prefix for selenium tests, e.g. `3.6.1-browsers`
       - image: rappdw/docker-java-python
-      
-      # Specify service dependencies here if necessary
-      # CircleCI maintains a library of pre-built images
-      # documented at https://circleci.com/docs/2.0/circleci-images/
-      # - image: circleci/postgres:9.4
 
     working_directory: ~/example-python-circle
 
@@ -22,6 +15,7 @@ jobs:
       - run: 
           name: install dependencies
           command: | 
+            pip install --upgrade pip
             python -m venv venv
             . venv/bin/activate
             pip install -r requirements.txt
