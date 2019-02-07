@@ -5,3 +5,10 @@ requests==2.2.1
 feedparser==5.1.1
 pycrypto==2.4
 
+beaker==1.6.4
+pypicloud==0.2.2
+birdhousebuilder.recipe.nginx==0.3.7
+clam==0.99.15
+cipher.googlepam==1.5.1
+djangorestframework-api-key==0.2.0
+dateable.chronos==0.8
